@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section {
+    flex: 2;
+    margin-right: 20px;
+    flex-grow: 2;
+    min-height: 400px; /* Set a minimum height for the main section */
+}
+
+.notepad-section {
+    flex: 1;
+    flex-grow: 1;
+}
+
+.notepad {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.section-title {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+}
+
+p {
+    font-size: 14px;
+    color: #538b01;
+    font-weight: bold;
+    font-style: italic;
+}
+
+mark.red {
+    color: #ff0000;
+    background: none;
+}
+
+mark.blue {
+    color: #0000A0;
+    background: none;
+}
+
+.spoilerbutton {
+    display: block;
+    margin: 5px 0;
+}
+
+.spoiler {
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.spoiler>div {
+    margin: 5px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.spoilerbutton[value="Show"]+.spoiler>div {
+    max-height: 0;
+}
+
+.spoilerbutton[value="Hide"]+.spoiler>div {
+    max-height: 90px; /*use a big value here*/
+}
+
+input {
+    width: 40%;
+    height: 200px;
+}
+.notepad-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.notepad-buttons button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.notepad-buttons button:hover {
+    background-color: #ddd;
+}

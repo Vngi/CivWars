@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="main-content">
+            <div class="main-section">
+                <table>
+                    <tr>
+					    <h2 class="center">Mafia</h2>
+                        <th>Role</th>
+                        <th>Abilities</th>
+                        <th>Team Knowledge</th>
+                    </tr>
+                    <tr>
+                        <td style="color:#ff0000">Murderer</td>
+                        <td>Can select a person to die once per night, if the murderer dies, the apprentice will become the new murderer.</td>
+                        <td>Knows the apprentice and the silencer.</td>
+                    </tr>
+                    <tr>
+                        <td>Apprentice</td>
+                        <td>Has no power until the murderer dies, then they will become the new Murderer.</td>
+                        <td>Knows the murderer and the silencer.</td>
+                    </tr>
+                    <tr>
+                        <td>Silencer</td>
+                        <td>Can select somebody to silence until the next night. If that person speaks out loud, they will die. Silenced people cannot vote. However, they can still use their role.</td>
+                        <td>Knows the Murderer and the Apprentice.</td>
+                    </tr>
+                    <tr>
+                        <td>Voodoo</td>
+                        <td>Every night the voodoo will curse a word ( Must be 4 + Letters ) and if anyone says that word, they will automatically die.</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Paparazzi</td>
+                        <td>Can reveal the role of one person to the whole game once per night.</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Paralyzer</td>
+                        <td>Can prevent one player from using their role for one round. If a villager is paralyzed, their vote will count as one instead of three. If a cop is paralyzed, they will not be told whom the paralyzer is.</td>
+                        <td>None</td>
+                    </tr>
+                </table>
+
+                <h1 class="center">Citizens</h1>
+                <table>
+                    <tr>
+                        <th>Role</th>
+                        <th>Abilities</th>
+                        <th>Team Knowledge</th>
+                    </tr>
+                    <tr>
+                        <td>Cop</td>
+                        <td>If anyone uses an ability on them, they will be told who it is and what role they are. Even the Murderer. You should probably tell the judge. This ability cannot be used if paralyzed.</td>
+                        <td>Knows who the judge is.</td>
+                    </tr>
+                    <tr>
+                        <td>Judge</td>
+                        <td>At any time, day or night, they may use their power to execute any player. This power may only be used once per game.</td>
+                        <td>Knows who the medic is.</td>
+                    </tr>
+                    <tr>
+                        <td>Medic</td>
+                        <td>Can protect any player for a round by whispering the player's name to the host. This does not provide protection from the voodoo curse, and their power cannot be used on themselves.</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Villager</td>
+                        <td>Their vote counts as three votes during the voting period. They must state that their vote is x3, or it will remain as a single vote.</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Detective</td>
+                        <td>Can learn the role of any other player by whispering another player's name to the host at night.</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Spirit</td>
+                        <td>Has no powers while they are alive, although as soon as they die, they may take revenge on any other player by killing them. This cannot be used if paralyzed.</td>
+                        <td>None</td>
+                    </tr>
+                </table>
+
+                <h3>Rules</h3>
+                <p>Host whispers each player a role. Players will read the sticky to find out more about their role. When the host is finished whispering roles, the host will call "ROLES" with the newly dimmed lights. The sticky states each role's ability and how to use that ability (Whisper host your action alongside a player's name to use it on them). Example: Murder Method. The Host will then announce what has happened. Example: Method has been murdered. Then the host will announce that it's time to take votes. The players then vote on who they'd like to get out of the game.</p>
+
+                <h3>How to Play Civilization Wars</h3>
+                <p>12 players will be divided into two teams, civilians and mafia. Each member will receive a role with unique abilities. Every night, players will be able to use their ability to gain advantages in the game. Each morning, the host will announce who was murdered at night, alongside anything else that happened that night. Once votes take place, players will then whisper to the host who they think is on the opposite team. The player who receives the most votes will be out. Once all/almost all members of the opposite team have died, your team wins the game. If a player exposes other roles aloud, they will be kicked.</p>
+            </div>
+
+            <div class="notepad-section">
+                <h3 class="section-title">Notepad</h3>
+                <div class="notepad">
+                    <textarea id="notepadTextArea" style="width: 100%; height: 100px;"></textarea>
+                    <div class="notepad-buttons">
+                        <button id="clearButton">Clear</button>
+                        <button id="undoButton">Undo</button>
+                        <button id="resetSizeButton">Reset Size</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
